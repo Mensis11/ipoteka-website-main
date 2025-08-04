@@ -1,0 +1,60 @@
+$modal-bg: rgba(0, 0, 0, 0.5);
+$primary: #3C487C;
+$secondary: #f2f2f2;
+$text-color: #20292E;
+$white: #fff;
+$cta: #797EBA;
+$button-color: #797EBA;
+$radius: 12px;
+$input-border: #ccc;
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+@mixin shadow{
+      display: inline-flex;
+      align-items: center;
+      background-color: $white;
+      padding: 0.4rem 1rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+      margin-bottom: 50px;
+      width: fit-content;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: $text-color;
+  background-color: $white;
+}
+
+.header {
+  &__container {
+    padding: 42px 57px 0px 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+    li a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  &__contact a {
+    color: $text-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
