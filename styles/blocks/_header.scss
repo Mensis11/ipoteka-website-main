@@ -34,11 +34,10 @@ body {
 .header {
   &__body{
     padding-block: 20px;
-    &__inner{
+    &-inner{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 60px;
     }
 
   }
