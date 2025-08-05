@@ -1,1 +1,5 @@
-import * as mySliders from "/scripts/blocks/slider.js";
+import { initSlider } from './blocks/slider.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  initSlider();
+});
