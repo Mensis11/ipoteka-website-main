@@ -8,9 +8,6 @@ $button-color: #797EBA;
 $radius: 12px;
 $input-border: #ccc;
 
-
-
-
 .footer {
   border-top: 2px solid #ADADAD;
   background: $white;
@@ -18,14 +15,12 @@ $input-border: #ccc;
   color: $text-color;
   font-family: Inter, sans-serif;
 
-  &__body {
-   &-inner{
-      display: flex;
+  &__body-inner {
+    display: flex;
     gap: 80px;
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    }
   }
 
   &__map {
@@ -37,11 +32,12 @@ $input-border: #ccc;
       width: 100%;
       height: 100%;
       border-radius: 10px;
+      border: none;
     }
   }
 
   &__info {
-    flex: 1;
+    flex: 1 1 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -60,6 +56,15 @@ $input-border: #ccc;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      transition: color 0.3s;
+      &:hover {
+        color: $cta;
+      }
+    }
   }
 
   &__links {
@@ -74,20 +79,112 @@ $input-border: #ccc;
       text-decoration: none;
       color: $text-color;
       font-size: 18px;
+      transition: color 0.3s;
+      &:hover {
+        color: $cta;
+      }
     }
   }
 
   &__seo {
-    width: 730px;
+    max-width: 730px;
     font-size: 18px;
     line-height: 1.6;
     color: $text-color;
     margin-top: 10px;
-    display: flex;
     text-align: right;
   }
-  &__contacts a{
-    text-decoration: none;
-    color: $text-color ;
+
+  @media (max-width: 1024px) {
+    padding: 40px 30px 30px 30px;
+
+    &__body-inner {
+      gap: 80px;
+      align-items: flex-start;
+    }
+
+    &__map {
+      flex: 1 1 350px;
+      max-width: 400px;
+      height: 400px;
+    }
+
+    &__info {
+      flex: 1 1 300px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &__contacts,
+    &__links {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &__seo {
+      max-width: 100%;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 20px 20px 20px;
+
+    &__body-inner {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__map {
+      width: 100%;
+      max-width: 100%;
+      height: 250px;
+      border-radius: 8px;
+    }
+
+    &__info {
+      flex: none;
+      width: 100%;
+
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+
+    &__logo {
+      font-size: 24px;
+    }
+
+    &__contacts {
+
+      align-items: center;
+      font-size: 16px;
+      gap: 10px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+    &__links {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      li a {
+        font-size: 16px;
+      }
+    }
+
+    &__seo {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: center;
+      margin-top: 15px;
+    }
   }
 }
