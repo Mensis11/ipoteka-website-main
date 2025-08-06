@@ -33,7 +33,7 @@ body {
 
 .header {
   &__body {
-      padding: 30px;
+      padding: 30px; // padding-block: 30px
     &-inner {
       display: flex;
       justify-content: space-between;
