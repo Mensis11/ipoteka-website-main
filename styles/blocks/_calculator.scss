@@ -8,7 +8,6 @@
 .calculator{
     margin-top: 100px;
     &__content{
-        width: 415px;
         height: 550px;
         background-color: rgba(0, 0, 0, 0.356);
         @include abs-center()   
