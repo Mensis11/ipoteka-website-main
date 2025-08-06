@@ -1,20 +1,25 @@
 main{
     .opening{
 
-        &__content{
-            display: flex;
-            justify-content: space-between;
+        &__body{
+            &-inner{
+             display: flex;
+            justify-content: space-between;  
+            
+            }
         }
         margin-top: 200px;
         &__title{
             font-size: 36px;
             font-weight: bold; 
             width: 530px; 
+            opacity: 90%;
         }
         &__subtitle{
             font-size: 16px;
             font-weight: semi-bold;
-            width: 340px;
+            opacity: 90%;
+            
         }
         &__button{
             display: flex;
@@ -25,6 +30,7 @@ main{
             height: 50px;
             color: #fff;
             font-size: 16px;
+            font-weight: medium;
             background: #797EBA;
             border-radius: 10px;
             margin-top: 30px;

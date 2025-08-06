@@ -103,7 +103,8 @@ $text-color: #fff;
             max-width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 32px; 
+            row-gap: 30px;
+            word-spacing: 3px;
 
             h3 {
               font-size: 32px;

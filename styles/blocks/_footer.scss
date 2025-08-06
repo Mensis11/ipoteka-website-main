@@ -18,12 +18,14 @@ $input-border: #ccc;
   color: $text-color;
   font-family: Inter, sans-serif;
 
-  &__container {
-    display: flex;
+  &__body {
+   &-inner{
+      display: flex;
     gap: 80px;
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
+    }
   }
 
   &__map {
@@ -83,5 +85,9 @@ $input-border: #ccc;
     margin-top: 10px;
     display: flex;
     text-align: right;
+  }
+  &__contacts a{
+    text-decoration: none;
+    color: $text-color ;
   }
 }

@@ -27,61 +27,59 @@
   </header>
 
   <main>
-    <section class="opening"> <!-- aria-labelledby -->
+    <section class="opening " aria-labelledby="opening">
       <div class="opening__body">
         <div class="opening__body-inner container mobile-container" >
-          <div class="opening__content"> <!-- можеш забрати content, лишній div, його функцію виконує __body-inner -->
               <div class="opening__text">
-                <!-- id для h1 змістовне -->
-                <h1 class="opening__title">Дешева іпотека — шлях до власного житла та затишку.</h1>
+                <h1 class="opening__title" id="opening-title">Дешева іпотека — шлях до власного житла та затишку.</h1>
                 <h2 class="opening__subtitle">Іпотечні кредити на нерухомість. <br> Просто, швидко, чесно. </br></h2>
                 <a href="#" class="opening__button">Замовити дзвінок</a>
               </div> 
               <div class="opening__image">
-                <img src="assets/images/house-photo.png" alt="House Image">
-                <!-- для img width height loading швидке -->
+                <img width="475px" height="475px" loading="eager" src="assets/images/house-photo.png"  alt="Кредит для нерухомості в Івано-Франківську">
               </div>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator " aria-labelledby="calculator ">
+      <div class="calculator__body">
+        <div class="calculator__body-inner container mobile-container" >
+              <div class="calculator__content">
+                
+              </div> 
         </div>
       </div>
     </section>
     
-    <section class="adventages"> <!-- aria-labelledby -->
-      <div class="adventagess__body">  <!-- опечатка в advantagess (два s в кінці) -->
+    <section class="adventages" aria-labelledby="adventages">
+      <div class="adventages__body">
         <div class="adventages__body-inner container mobile-container">
           <div class="adventages__h2-title">
-            <!-- id для h2 змістовне -->
-            <h2 class="adventages__title">
+            <h2 class="adventages__title" id="adventages-title">
               Наші переваги  
-              <img class="adventages__img" src="assets/images/Gem Stone.png" alt="">
-              <!-- для img width height, alt змістовний, як у figma -->
+              <img width="36px" height="36px" class="adventages__img" src="assets/images/Gem Stone.png" alt="">
             </h2>       
           </div>
           <div class="advantages__content">
             <ul class="features-list">
               <li>
                 <div class="feature-title">
-                  <!-- для img width height, alt пустий -->
-                  <!-- id для h3 не треба -->
-                  <img src="assets/images/Money With Wings (1).png" alt="Аванс">
+                  <img width="20px" height="20px" src="assets/images/Money With Wings (1).png" alt="">
                   <h3>Мінімальний аванс</h3>
                 </div>
                 <p>10% від вартості (від $5000)</p>
               </li>
               <li>
                 <div class="feature-title">
-                  <!-- для img width height, alt пустий -->
-                  <!-- id для h3 не треба -->
-                  <img src="assets/images/Credit Card.png" alt="Платіж">
+                  <img width="20px" height="20px" src="assets/images/Credit Card.png" alt="Платіж">
                   <h3>Фіксований платіж</h3>
                 </div>
                 <p>$1000 / міс. — завжди, без змін</p>
               </li>
               <li>
                 <div class="feature-title">
-                  <!-- для img width height, alt пустий -->
-                  <!-- id для h3 не треба -->
-                  <img src="assets/images/Alarm Clock.png" alt="Термін">
+                  <img width="20px" height="20px" src="assets/images/Alarm Clock.png" alt="Термін">
                   <h3>Термін</h3>
                 </div>
                 <p>5 - 7 років — на вибір</p>
@@ -90,18 +88,14 @@
             <ul class="features-list">
               <li>
                 <div class="feature-title">
-                  <!-- для img width height, alt пустий -->
-                  <!-- id для h3 не треба -->
-                  <img src="assets/images/Office Building.png" alt="Квартира">
+                  <img width="20px" height="20px" src="assets/images/Office Building.png" alt="Квартира">
                   <h3>Квартира</h3>
                 </div>
                 <p>Одразу у власність або одразу з переоформленням після виплати авансу</p>
               </li>
               <li>
                 <div class="feature-title">
-                  <!-- для img width height, alt пустий -->
-                  <!-- id для h3 не треба -->
-                  <img src="assets/images/Cross Mark.png" alt="Без банку">
+                  <img width="20px" height="20px" src="assets/images/Cross Mark.png" alt="Без банку">
                   <h3>Без банку</h3>
                 </div>
                 <p>Просте рішення напряму з компанією</p>
@@ -112,83 +106,69 @@
       </div>
     </section>
 
-    <section class="offers"> <!-- aria-labelledby -->
+    <section class="offers" aria-labelledby="offers"> 
         <div class="offers__body">
             <div class="offers__body-inner container mobile-container">
                 <div class="offers__h2-title">
-                  <!-- id для h2 змістовне -->
-                  <!-- для img width height, alt пустий і виведи img з h2 у div -->
-                    <h2 class="offers__title">
+                    <h2 class="offers__title" id="offers-title">
                         Пропозиції
-                        <img class="offers__img" src="assets/images/Envelope.png" alt="">
-                        <!-- для img width height, alt змістовний, як у figma -->
+                        <img width="36px" height="36px" class="offers__img" src="assets/images/Envelope.png" alt="пропозиції кредиту">
                     </h2>
                 </div>
                 <div class="offers__content">
                     <div class="offers__box">
                         <div class="offers__box-text">
-                          <!-- для img width height, alt змістовний, як у figma -->
-                            <img src="assets/images/Office Building.png" alt="">
+                            <img width="36px" height="36px" src="assets/images/Office Building.png" alt="Моя квартира за 5 років">
                             <h3>“Моя квартира за 5 років”</h3>
                         </div>
                         <p>Термін: 60 місяців (5 років). Купуй повноцінну квартиру вже зараз — без очікувань чи будівництва. Фіксований платіж $1000 / міс. без зміни ставок.</p>
                         <a href="">Перейти</a>
                     </div>
                     <div class="offers__box-photo">
-                        <!-- для img width height, ліниве loading, alt змістовний, як у figma написано -->
-                        <img src="assets/images/offers1.png" alt="">
+                        <img  width="654px" height="303px" loading="lazy" src="assets/images/offers1.png" alt="Кредити для нерухомості Івано-Франківськ">
                     </div>
                 </div>
                 <div class="offers__content">
                     <div class="offers__box">
                         <div class="offers__box-text">
-                            <!-- Не та емодзі, має бути нотатник -->
-                            <!-- для img width height, alt змістовний, як у figma -->
-                            <img src="assets/images/Office Building.png" alt="">
+                            <img width="36px" height="36px" src="assets/images/Memo.png" alt="Комфортна іпотека">
                             <h3>“Комфортна іпотека на 7 років”</h3>
                         </div>
                         <p>Термін: 84 місяці (7 років). Низький аванс і стабільний графік платежів. Фіксований платіж $1000 / міс. без зміни ставок.</p>
                         <a href="">Перейти</a>
                     </div>
                     <div class="offers__box-photo">
-                        <!-- для img width height, ліниве loading, alt змістовний, як у figma написано -->
-                        <img src="assets/images/offers2.png" alt="">
+                        <img width="654px" height="303px" loading="lazy" src="assets/images/offers2.png" alt="Кредити для нерухомості Івано-Франківськ">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="recommendations"> <!-- aria-labelledby -->
+    <section class="recommendations" aria-labelledby="recommendations">
       <div class="recommendations__body">
         <div class="recommendations__body-inner container mobile-container">
           <div class="recommendations__h2-title">
-            <!-- id для h2 змістовне -->
-              <h2 class="recommendations__title">
+              <h2 class="recommendations__title" id="recommendations-title">
                   Рекомендації
-                  <!-- для img width height, alt змістовний, як у figma -->
-                  <img class="recommendations__img" src="assets/images/Star.png" alt="">
+                  <img width="36px" height="36px" class="recommendations__img" src="assets/images/Star.png" alt="">
               </h2>
           </div>
           <div class="recommendations__slider">
             <div class="slider__content">
-              <!-- для button title -->
-              <button class="slider-control--button prev-button" aria-label="Попередній слайд">❮</button>
+              <button title="Попередній слайд" class="slider-control--button prev-button" aria-label="Попередній слайд">❮</button>
               <div class="image-display">
                 <div class="slide active">
-                  <!-- для img width height, лінива загрузка, alt змістовний, як у figma написано -->
-                  <img src="assets/images/slider111.png" alt="living room" />
+                  <img width="1333px" height="650px" loading="lazy" src="assets/images/slider111.png" alt="living room" />
                   <div class="slide__text-content">
-                    <!-- h3, не h2 -->
-                    <h2
+                    <h3
                     >Навіщо платити чужим?
-                    </h2>
+                    </h3>
                     <p>
                       Щомісяця платиш $350 за оренду? За 5 років — це $21000, і квартира все одно не твоя!
                     </p>
+                    <p>Ми пропонуємо інакше:</p>
                     <ul>
-                      <!-- параграф не має бути у списку, винеси його вище -->
-                      <p>Ми пропонуємо інакше:</p>
                       <li>• 10% перший внесок (від $5 000)</li>
                       <li>• $1 000 / міс. — і вже за 5 років ти повноцінний власник житла!</li>
                       <li>• Без банків, без страховок, без сюрпризів</li>
@@ -197,10 +177,8 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- для img width height, лінива загрузка, alt змістовний, як у figma написано -->
-                  <img src="assets/images/slider22.png" alt="living room" />
+                  <img width="1333px" height="650px" loading="lazy" src="assets/images/slider22.png" alt="living room" />
                   <div class="slide__text-content">
-                    <!-- h3, не h2 -->
                     <h2>
                       Платиш за оренду? Плати за своє — і живи в ньому з першого дня!
                     </h2>
@@ -211,11 +189,10 @@
                       <li>• Живеш одразу після авансу</li>
                       <li>• Жодних банків, страховок чи прихованих комісій</li>
                     </ul>  
-                    <!-- параграф не має бути у списку, винеси його вище -->
-                    <ul>
                       <p>
                         Приклад:
                       </p>
+                    <ul>
                       <li>• Квартира $40 000</li>
                       <li>• Внесок — $4 000</li>
                       <li>• Платіж — $800 / міс</li>
@@ -227,13 +204,11 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- для img width height, лінива загрузка, alt змістовний, як у figma написано -->
-                  <img src="assets/images/slider3.png" alt="living room" />
+                  <img width="1333px" height="650px" loading="lazy" src="assets/images/slider3.png" alt="living room" />
                   <div class="slide__text-content">
-                    <!-- h3, не h2 -->
-                    <h2>
+                    <h3>
                       Твоя квартира за ціною оренди!
-                    </h2>
+                    </h3>
                     <ul>
                       <li>• 1-кімнатна квартира в Івано-Франківську</li>
                       <li>• Перший внесок — $5 000</li>
@@ -249,13 +224,11 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- для img width height, лінива загрузка, alt змістовний, як у figma написано -->
-                  <img src="assets/images/slider4.png" alt="living room" />
+                  <img width="1333px" height="650px" loading="lazy" src="assets/images/slider4.png" alt="living room" />
                   <div class="slide__text-content">
-                    <!-- h3, не h2 -->
-                    <h2>
+                    <h3>
                       Своє житло за $1 000 / міс. без банку та іпотеки!
-                    </h2>
+                    </h3>
                     <p>
                       Купуйте квартиру вже сьогодні, внісши лише 10% — і живіть у власному помешканні, сплачуючи фіксовано щомісяця. Без страховок. Без прихованих комісій. Без черг у банках.
                     </p>
@@ -263,17 +236,15 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <img src="assets/images/slider5.png" alt="living room" />
+                  <img width="1333px" height="650px" loading="lazy" src="assets/images/slider5.png" alt="living room" />
                   <div class="slide__text-content">
-                    <!-- h3, не h2 -->
-                    <h2>Фінансова свобода: не плати орендодавцю!</h2>
+                    <h3>Фінансова свобода: не плати орендодавцю!</h3>
                     <p>
                       Середня оренда квартири у Франківську — $350 / міс.
                     <br>  За 7 років — це $29 400, просто викинуті гроші.</br>
                     </p>
-                    <!-- p не має бути у списку, винеси його вище -->
+                    <p>У нас ти отримуєш:</p>
                     <ul>
-                      <p>У нас ти отримуєш:</p>
                       <li>• Житло в Івано-Франківську</li>
                       <li>• Власність після виплат</li>
                       <li>• Фіксований щомісячний платіж</li>
@@ -287,10 +258,8 @@
                   </div>
                 </div>
               </div>
-              <!-- для button title -->
-              <button class="slider-control--button next-button" aria-label="Наступний слайд">❯</button>
+              <button title="Наступний слайд" class="slider-control--button next-button" aria-label="Наступний слайд">❯</button>
             </div>
-            <!-- тут title і aria-label не додавай -->
             <div class="slider-navigation">
               <button class="nav-button active"></button>
               <button class="nav-button"></button>
@@ -305,38 +274,38 @@
   </main>
 
   <footer class="footer">
-    <!-- footer__body footer__body-inner + container + mobile-container -->
-    <div class="footer__container">
-      <div class="footer__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.5587070626676!2d24.69814597646624!3d48.9226338974129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1546b131e4d%3A0xa7aabef3c2de274b!2z0JrQuNC10LLRgdC60LDRjyDQodC10YDQvdCw0Y8sIDI1LCDQhtCy0LDQvdC40YbRjyDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1suk!2sua!4v1697461024731!5m2!1suk!2sua"
-          width="100%"
-          height="100%"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-      <div class="footer__info">
-          <!-- тут хай буде div на майбутнє -->
-        <div class="footer__logo">logo</div>
-        <div class="footer__contacts">
-          <!-- тут має бути <a> mail to і також tel -->
-          <div>+380 000 000 00</div>
-          <div>youemail@gmail.com</div>
-          <!-- краще через p -->
-          <div>Україна, м. Івано-Франківськ</div>
-        </div>
-        <ul class="footer__links">
-          <li><a href="#">Послуги</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-        <p class="footer__seo">
-          Вигідні іпотечні кредити в Івано-Франківську . Швидке оформлення, прозорі умови, індивідуальний підхід. Кредит готівкою, онлайн або під заставу нерухомості. Кредити для молодих сімей, військових, ФОП.
-        </p>
+    <div class="footer__body">
+      <div class="footer__body-inner container mobile-container">
+          <div class="footer__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.5587070626676!2d24.69814597646624!3d48.9226338974129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1546b131e4d%3A0xa7aabef3c2de274b!2z0JrQuNC10LLRgdC60LDRjyDQodC10YDQvdCw0Y8sIDI1LCDQhtCy0LDQvdC40YbRjyDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1suk!2sua!4v1697461024731!5m2!1suk!2sua"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+    
+          <div class="footer__info">
+            <div></div>
+            <div class="footer__logo">logo</div>
+            <div class="footer__contacts">
+              <a href="mail_to">youmail@gmail.com</a>
+              <a href="tel:+123456789">+380 000 000 00</a>
+              <!-- тут має бути <a> mail to і також tel -->
+              <p>Україна, м. Івано-Франківськ</p>
+            </div>
+            <ul class="footer__links">
+              <li><a href="#">Послуги</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+            <p class="footer__seo">
+              Вигідні іпотечні кредити в Івано-Франківську . Швидке оформлення, прозорі умови, індивідуальний підхід. Кредит готівкою, онлайн або під заставу нерухомості. Кредити для молодих сімей, військових, ФОП.
+            </p>
+          </div>
       </div>
     </div>
   </footer>
