@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<header class="header">
-  <div class="header__body">
-    <div class="header__body-inner container mobile-container">
-      <div class="header__logo">
-        <a href="#" title="Logo" aria-label="Logo">logo</a>
+  <!-- проблеми з хрестиком на burger menu -->
+  <header class="header">
+    <div class="header__body">
+      <div class="header__body-inner container mobile-container">
+        <div class="header__logo">
+          <a href="#" title="Logo" aria-label="Logo">logo</a>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="offers.html">Послуги</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__contact">
+          <a class="tell-button" href="tel:+38000000000">
+            <img width="24" height="24" src="assets/images/phone-header.png" alt="">+380 000 000 00
+          </a>
+        </div>
+
+        <button class="burger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li><a href="offers.html">Послуги</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </nav>
-
-      <div class="header__contact">
-        <a class="tell-button" href="tel:+38000000000">
-          <img width="24" height="24" src="assets/images/phone-header.png" alt="">+380 000 000 00
-        </a>
-      </div>
-
-      <button class="burger" aria-label="Меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </div>
-</header>
-
+  </header>
 
   <main>
     <section class="opening " aria-labelledby="opening">
@@ -303,7 +303,6 @@
             <div class="footer__contacts">
               <a href="mailto:youmail@gmai.com">youmail@gmail.com</a>
               <a href="tel:+123456789">+380 000 000 00</a>
-              <!-- тут має бути <a> mail to і також tel -->
               <p>Україна, м. Івано-Франківськ</p>
             </div>
             <ul class="footer__links">
@@ -318,7 +317,9 @@
       </div>
     </div>
   </footer>
-<script src="scripts/main.js" type="module"></script>
-<script src="scripts/blocks/burger_manu.js"></script>
+
+  <!-- тут теж варто підключати тільки main.js (в burger_manu.js написав ще дещо) -->
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/blocks/burger_manu.js"></script>
 </body>
 </html>
