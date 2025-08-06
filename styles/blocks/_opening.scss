@@ -1,49 +1,85 @@
-main{
-    .opening{
+main {
+  .opening {
+    margin-top: 200px;
 
-        &__body{
-            &-inner{
-             display: flex;
-            justify-content: space-between;  
-            
-            }
+    &__body {
+      &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px; 
+
+        @media (max-width: 768px) {
+          flex-direction: column-reverse;
+          text-align: center;
+          gap: 30px;
         }
-        margin-top: 200px;
-        &__title{
-            font-size: 36px;
-            font-weight: bold; 
-            width: 530px; 
-            opacity: 90%;
-        }
-        &__subtitle{
-            font-size: 16px;
-            font-weight: semi-bold;
-            opacity: 90%;
-            
-        }
-        &__button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            width: 185px;
-            height: 50px;
-            color: #fff;
-            font-size: 16px;
-            font-weight: medium;
-            background: #797EBA;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        &__button:hover{
-            background: #5F63A4;
-        }
-        &__text{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+      }
     }
-        
 
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      width: 530px;
+      opacity: 0.9;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+        width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 22px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      opacity: 0.9;
+
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 185px;
+      height: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      background: #797EBA;
+      border-radius: 10px;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #5F63A4;
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        align-items: center;
+      }
+    }
+
+    &__image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
