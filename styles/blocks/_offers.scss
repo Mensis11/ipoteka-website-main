@@ -2,7 +2,6 @@
   display: inline-flex;
   align-items: center;
   background-color: #fff;
-  padding: 23px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
   margin-bottom: 50px;
@@ -12,19 +11,27 @@
 .offers {
   margin-top: 180px;
 
-  &__title {
-    font-size: 32px;
+  .offers__h2-title {
+    font-size: 36px;
     font-weight: bold;
     color: #333;
     margin: 0;
-    @include shadow;
-  }
+    padding:16px;
+    gap: 15px;
 
+    @include shadow;
+    
+    h2{
+      margin: 0;
+      font-size: 36px;
+    }
+  }
   &__img {
     width: 36px;
     height: 36px;
     margin-left: 20px;
   }
+
 
   &__box-text {
     display: flex;
@@ -43,11 +50,12 @@
   }
 
   &__box {
+    width: 50%;
     p {
       color: #ffffff;
       font-weight: regular;
       font-size: 20px;
-      width: 560px;
+
     }
 
     a {
@@ -77,8 +85,8 @@
   }
 
   &__box {
+    width: 50%;
     display: flex;
-    width: 660px;
     background-color: #797EBA;
     height: 273px;
     border-bottom-left-radius: 10px;
@@ -90,23 +98,32 @@
   }
 
   .offers__box-photo {
+    width: 50%;
     margin-left: 5px;
     position: relative;
     display: inline-block;
+
+    img{
+      object-fit:cover ;
+      width: 100%;
+      filter: brightness(50%);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
   }
 
-  .offers__box-photo::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+  // .offers__box-photo img::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   pointer-events: none;
+  //   border-top-right-radius: 20px;
+  //   border-bottom-right-radius: 20px;
+  // }
 
 
   @media (max-width: 768px) {
@@ -123,6 +140,13 @@
       padding: 20px; 
       height: auto;
       border-radius: 20px; 
+
+      p{
+        font-size: 18px
+      }
+      h3{
+        font-size: 28px;
+      }
     }
 
     .offers__box-photo {

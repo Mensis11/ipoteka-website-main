@@ -12,12 +12,16 @@
 .adventages {
   margin-top: 200px;
 
-  .adventages__title {
+  .adventages__h2-title {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     margin: 0;
     @include shadow;
+     h2{
+      margin: 0;
+      font-size: 36px;
+    }
 
     display: inline-flex;
     align-items: center;
@@ -37,6 +41,7 @@
   .adventages__img {
     width: 36px;
     height: 36px;
+    margin-left: 20px;
 
     @media (max-width: 480px) {
       width: 28px;
@@ -49,7 +54,7 @@
     flex-direction: column;
     gap: 32px;
     align-items: center;
-    padding: 32px 16px;
+    padding: 0;
     @media (max-width: 1024px) {
         gap: 2px;
     }
@@ -64,17 +69,19 @@
       @media (max-width: 1024px) {
         flex-wrap: wrap;
         padding: 0;
-        width: 300px;
+        
       }
 
       @media (max-width: 768px) {
+        width: 100%;
         flex-direction: column;
         align-items: center;
 
       }
 
       li {
-        width: 280px;
+        width: 100%;
+        max-width: 280px;
         background: #fff;
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -83,16 +90,6 @@
         flex-direction: column;
         gap: 12px;
         text-align: left;
-
-        @media (max-width: 768px) {
-          width: 100%;
-          max-width: 340px;
-          padding: 32px 24px;
-        }
-
-        @media (max-width: 480px) {
-          padding: 24px 16px;
-        }
 
         .feature-title {
           display: flex;
@@ -111,6 +108,7 @@
             margin: 0;
 
             @media (max-width: 480px) {
+              width: 100%;
               font-size: 18px;
             }
           }
