@@ -1,0 +1,48 @@
+@mixin shadow{
+      display: inline-flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+      width: fit-content;
+}
+
+.openingab{
+    margin-top: 120px;
+    &__body{
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .openingab__text-contant{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+            }
+        }
+    }
+    .openingab__text{
+        h1{
+           margin: 0;
+           padding: 8px; 
+            font-size: 32px;
+            font-weight: bold;
+            @include shadow
+            
+        }
+        h2{
+           margin: 0;
+           padding: 8px; 
+            font-size: 32px;
+            font-weight: bold;
+            @include shadow
+        }
+        p{
+            color: #333;
+            font-size: 24px;
+            font-weight: regular;
+        }
+    }
+}
