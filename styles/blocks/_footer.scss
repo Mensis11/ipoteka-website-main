@@ -96,35 +96,62 @@ $input-border: #ccc;
   }
 
   @media (max-width: 1024px) {
-    padding: 40px 30px 30px 30px;
+     padding: 30px 20px 20px 20px;
 
     &__body-inner {
-      gap: 80px;
-      align-items: flex-start;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+      text-align: center;
     }
 
     &__map {
-      flex: 1 1 350px;
-      max-width: 400px;
-      height: 400px;
+      width: 100%;
+      max-width: 100%;
+      height: 250px;
+      border-radius: 8px;
     }
 
     &__info {
-      flex: 1 1 300px;
-      align-items: flex-start;
-      text-align: left;
+      flex: none;
+      width: 100%;
+
+      align-items: center;
+      text-align: center;
+      gap: 15px;
     }
 
-    &__contacts,
+    &__logo {
+      font-size: 24px;
+    }
+
+    &__contacts {
+
+      align-items: center;
+      font-size: 16px;
+      gap: 10px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
     &__links {
-      align-items: flex-start;
-      text-align: left;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      li a {
+        font-size: 16px;
+      }
     }
 
     &__seo {
       max-width: 100%;
-      text-align: left;
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: center;
+      margin-top: 15px;
     }
   }
 
