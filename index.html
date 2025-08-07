@@ -12,7 +12,7 @@
     <div class="header__body">
       <div class="header__body-inner container mobile-container">
         <div class="header__logo">
-          <a href="#" title="Logo" aria-label="Logo">logo</a>
+          <a href="index.html" title="Logo" aria-label="Logo">logo</a>
         </div>
 
         <nav class="header__nav">
@@ -53,6 +53,35 @@
         </div>
       </div>
     </section>
+    <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Закрити" data-close-modal>&times;</button>
+    
+        <h2 class="modal__title" id="modal-title">Введіть свої дані</h2>
+    
+        <form class="form" id="form" name="contact-form">
+          <label class="form__label">
+            <span>Ім’я</span>
+            <input type="text" name="name" id="name" class="form__input" required />
+          </label>
+    
+          <label class="form__label">
+            <span>Номер телефону</span>
+            <input type="tel" name="phone" id="phone" class="form__input" required />
+          </label>
+    
+          <label class="form__label">
+            <span>Email</span>
+            <input type="email" name="email" id="email" class="form__input" required />
+          </label>
+    
+          <div id="order-summary" class="form__summary" name="summary"></div>
+    
+          <button class="form__submit" id="button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
 
     <section class="calculator " aria-labelledby="calculator ">
       <div class="calculator__body">
@@ -134,7 +163,7 @@
                             <h3>“Моя квартира за 5 років”</h3>
                         </div>
                         <p>Термін: 60 місяців (5 років). Купуй повноцінну квартиру вже зараз — без очікувань чи будівництва. Фіксований платіж $1000 / міс. без зміни ставок.</p>
-                        <a href="">Перейти</a>
+                        <a href="offers.html">Перейти</a>
                     </div>
                     <div class="offers__box-photo">
                         <img  width="654px" height="303px" loading="lazy" src="assets/images/offers11.svg" alt="Кредити для нерухомості Івано-Франківськ">
@@ -147,7 +176,7 @@
                             <h3>“Комфортна іпотека на 7 років”</h3>
                         </div>
                         <p>Термін: 84 місяці (7 років). Низький аванс і стабільний графік платежів. Фіксований платіж $1000 / міс. без зміни ставок.</p>
-                        <a href="">Перейти</a>
+                        <a href="offers.html">Перейти</a>
                     </div>
                     <div class="offers__box-photo">
                         <img width="654px" height="303px" loading="lazy" src="assets/images/offers22.svg" alt="Кредити для нерухомості Івано-Франківськ">
@@ -312,9 +341,9 @@
               <p>Україна, м. Івано-Франківськ</p>
             </div>
             <ul class="footer__links">
-              <li><a href="#">Послуги</a></li>
-              <li><a href="#">Про нас</a></li>
-              <li><a href="#">Контакти</a></li>
+              <li><a href="offers.html">Послуги</a></li>
+              <li><a href="about_us.html">Про нас</a></li>
+              <li><a href="contact.html">Контакти</a></li>
             </ul>
             <p class="footer__seo">
               Вигідні іпотечні кредити в Івано-Франківську . Швидке оформлення, прозорі умови, індивідуальний підхід. Кредит готівкою, онлайн або під заставу нерухомості. Кредити для молодих сімей, військових, ФОП.
@@ -324,8 +353,7 @@
     </div>
   </footer>
 
-  <!-- тут теж варто підключати тільки main.js (в burger_manu.js написав ще дещо) -->
   <script src="scripts/main.js" type="module"></script>
-  <script src="scripts/blocks/burger_manu.js"></script>
+  <script src="scripts/blocks/button_call.js"></script>
 </body>
 </html>
