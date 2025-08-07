@@ -57,9 +57,44 @@
     <section class="calculator " aria-labelledby="calculator ">
       <div class="calculator__body">
         <div class="calculator__body-inner container mobile-container" >
-              <div class="calculator__content">
-                
-              </div> 
+            <div class="calculator__card">
+              <h2 class="calculator__title">Розрахувати кредит</h2>
+
+              <div class="calculator__calculator__field">
+                <label class="calculator__label" for="sum-input">Сума кредиту, $</label>
+                <input class="calculator__input" type="number" id="sum-input" value="10000" min="1000" step="1000">
+              </div>
+
+              <div class="calculator__field">
+                <label class="calculator__label" for="slider-month-input">Термін, місяців</label>
+                <input class="calculator__input" type="range" id="slider-month-input" min="12" max="60" step="12" value="12">
+                <div class="calculator__slider-value" id="slider-month-label">12 міс.</div>
+              </div>
+
+              <div class="calculator__field">
+                <label class="calculator__label" for="rate-input">Ставка % на місяць</label>
+                <input class="calculator__input" type="number" id="rate-input" value="1" min="0" max="100">
+              </div>
+
+              <div class="calculator__results">
+                <div>
+                  <span class="calculator__results-label">Сума кредиту:</span>
+                  <span class="value" id="sum-credit">0 $</span>
+                </div>
+                <div>
+                  <span class="calculator__results-label">Відсотки:</span>
+                  <span class="calculator__results-value" id="percent-credit">0 $</span>
+                </div>
+                <div>
+                  <span class="calculator__results-label">Загальна сума:</span>
+                  <span class="calculator__results-value" id="sum-amount">0 $</span>
+                </div>
+                <div>
+                  <span class="calculator__results-label">Щомісячно:</span>
+                  <span class="calculator__results-value" id="monthly-payment">0 $</span>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
