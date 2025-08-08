@@ -39,7 +39,7 @@
   .adventagesab-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 40px;
+    gap: 30px;
     padding: 0;
     
     list-style: none;
@@ -47,8 +47,6 @@
     li {
       gap: 10px;
       background-color: #3C487C;
-      min-width: 250px;
-      max-width: 400px;
       height: 240px;
       padding: 0 0 0 30px;
       border-radius: 15px;
@@ -74,6 +72,7 @@
         color: #ffffff;
         font-size: 18px;
         margin: 0;
+        font-weight: 500;
       }
     }
 
