@@ -311,9 +311,5 @@ z-index: 999;
       @include abs-center;
     }
       top:90%;
-
-      &:hover {
-        background-color: darken($primary, 10%);
-      }
     }
   }
