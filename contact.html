@@ -41,16 +41,24 @@
                     "url": "https://example.com/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://example.com/logo.png"
+                        "url": ""
                     },
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+380 00 000 00 00",
-                        "email": "info@example.com",
-                        "contactType": "customer support",
-                        "areaServed": "UA",
-                        "availableLanguage": "Ukrainian"
-                    },
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380982752678",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        },
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380668604679",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        }
+                    ],
                     "address": {
                         "@type": "PostalAddress",
                         "addressLocality": "Івано-Франківськ",
@@ -108,7 +116,7 @@
 <main>
     <section class="contact">
         <div class="contact__body">
-            <div class="contact__body-inner container mobile-container">
+            <div class="contact__body-inner container mobile-container animate-fade">
                 <div class="contact__map">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.5587070626676!2d24.69814597646624!3d48.9226338974129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1546b131e4d%3A0xa7aabef3c2de274b!2z0JrQuNC10LLRgdC60LDRjyDQodC10YDQvdCw0Y8sIDI1LCDQhtCy0LDQvdC40YbRjyDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1suk!2sua!4v1697461024731!5m2!1suk!2sua"
@@ -141,7 +149,7 @@
     </section>
     <section class="block">
         <div class="block__body">
-            <div class="block__body-inner container mobile-container">
+            <div class="block__body-inner container mobile-container animate-fade">
                 <div class="block__text">
                     <h3>Маєш плани, але бракує фінансів?</h3>
                     <p>Ми — на твоєму боці. Отримай гроші під заставу швидко, просто <br> Жодних прихованих нюансів — лише прозорість, швидкість і турбота про твої інтереси.</p>
@@ -184,6 +192,8 @@
       </div>
     </div>
 </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="scripts/main.js" type="module"></script>
 </body>
 </html>

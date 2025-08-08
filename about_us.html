@@ -15,7 +15,7 @@
 
     <!-- Open Graph (Facebook, LinkedIn та ін.) -->
     <meta property="og:title" content="Кредитне Бюро Західного Регіону | Про нас">
-    <meta property="og:description" content="Про нашу компанію | Кредитне Бюро Західного Регіону. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:description" content="Кредитне Бюро Західного Регіону | Про нашу компанію. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
     <meta property="og:type" content="website" />
     <!-- <meta property="og:url" content="https://" /> -->
     <!-- <meta property="og:image" content="https://" /> -->
@@ -41,16 +41,25 @@
                     "url": "https://example.com/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://example.com/logo.png"
+                        "url": ""
                     },
                     "description": "Ми — не просто фінансова установа. Ми — партнери у найвідповідальніші моменти життя. Наша компанія створена, щоб ламати стереотипи про кредити та створювати новий стандарт сервісу — теплий, людяний, справжній.",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+380123456789",
-                        "contactType": "sales",
-                        "areaServed": "UA",
-                        "availableLanguage": "Ukrainian"
-                    }
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380982752678",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        },
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380668604679",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        }
+                    ]
                 }
             ]
         }
@@ -92,20 +101,19 @@
         <div class="openingab__body-inner container mobile-container" >
             <div class="openingab__text-contant">
                 <div class="openingab__text">
-                    <!-- id h1 не збігається з aria-labelledby секції -->
-                    <h1 class="openingab__title" id="opening-about-us"> Про компанію</h1>
-                    <p class="openingab__subtitle">Ми — не просто фінансова установа. Ми — партнери<br> у найвідповідальніші моменти життя. Наша компанія <br> створена, щоб ламати стереотипи про кредити та <br>створювати новий стандарт сервісу — теплий ,<br> людяний, справжній.</p>
+                    <h1 class="openingab__title animate-left" id="opening-about-us"> Про компанію</h1>
+                    <p class="openingab__subtitle animate-fade">Ми — не просто фінансова установа. Ми — партнери<br> у найвідповідальніші моменти життя. Наша компанія <br> створена, щоб ламати стереотипи про кредити та <br>створювати новий стандарт сервісу — теплий ,<br> людяний, справжній.</p>
                 </div>
                 <div class="openingab__text">
-                    <h2 class="openingab__title" id="opening-title-why-my"> Чому ми?</h2>
-                    <p class="openingab__subtitle">Тому що ми не просто даємо гроші — ми даємо<br> спокій, впевненість і майбутнє. Ми слухаємо,<br> розуміємо, підтримуємо. Ми створюємо кредитний<br> сервіс, де кожен клієнт — не номер у черзі, а людина<br> з мрією, яку ми допомагаємо здійснити.</p>
+                    <h2 class="openingab__title animate-left" id="opening-title-why-my"> Чому ми?</h2>
+                    <p class="openingab__subtitle animate-fade">Тому що ми не просто даємо гроші — ми даємо<br> спокій, впевненість і майбутнє. Ми слухаємо,<br> розуміємо, підтримуємо. Ми створюємо кредитний<br> сервіс, де кожен клієнт — не номер у черзі, а людина<br> з мрією, яку ми допомагаємо здійснити.</p>
                 </div>
                 <div class="openingab__text">
-                    <h2 class="openingab__title" id="opening-title-our-mission"> Наша місія</h2>
-                    <p class="openingab__subtitle">Покращувати життя людей завдяки якісним<br> фінансовим рішенням. Ми створені, щоб допомагати<br> — просто, швидко, чесно.</p>
+                    <h2 class="openingab__title animate-left" id="opening-title-our-mission"> Наша місія</h2>
+                    <p class="openingab__subtitle animate-fade">Покращувати життя людей завдяки якісним<br> фінансовим рішенням. Ми створені, щоб допомагати<br> — просто, швидко, чесно.</p>
                 </div>
             </div>
-              <div class="openingab__image">
+              <div class="openingab__image animate-right">
                 <img width="475px" height="475px" loading="eager" src="assets/images/money.svg"  alt="Кредит для нерухомості в Івано-Франківську">
               </div>
         </div>
@@ -115,15 +123,14 @@
     <section class="adventagesab" aria-labelledby="adventages">
       <div class="adventagesab__body">
         <div class="adventagesab__body-inner container mobile-container">
-          <div class="adventagesab__h2-title">
+          <div class="adventagesab__h2-title animate-left">
             <h2 class="adventagesab__title" id="adventages-title">
               Чому вибирають нас?
             </h2>
-            <!-- додай alt для іконки, як у решти -->
             <img width="36px" height="36px" class="adventages__img" src="assets/images/Thinking Face.svg" alt="Чому вибирають нашу компанію?">
         </div>
           <div class="adventagesab__content">
-            <ul class="adventagesab-list">
+            <ul class="adventagesab-list animate-fade">
               <li>
                 <h3>Унікальність</h3>
                 <p>Кожен клієнт — унікальний. <br> Пропонуємо індивідуальні кредитні <br>рішення, зручні саме для вас.</p>
@@ -168,7 +175,7 @@
 
     <section class="block">
         <div class="block__body">
-            <div class="block__body-inner container mobile-container">
+            <div class="block__body-inner container mobile-container animate-fade">
                 <div class="block__text">
                     <h3>Маєш плани, але бракує фінансів?</h3>
                     <p>Ми — на твоєму боці. Отримай гроші під заставу швидко, просто <br> Жодних прихованих нюансів — лише прозорість, швидкість і турбота про твої інтереси.</p>
@@ -246,6 +253,8 @@
         </div>
       </div>
   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="scripts/main.js" type="module"></script>
 </body>
 </html>

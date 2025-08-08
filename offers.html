@@ -9,13 +9,13 @@
     <!-- <meta name="google-site-verification" content="" /> -->
 
     <!-- SEO -->
-    <meta name="description" content="Кредитне Бюро Західного Регіону | Пропозиції для кредитування. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
+    <meta name="description" content="Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
     <!-- <meta name="robots" content="index, follow, max-snippet:150" /> -->
     <!-- <link rel="canonical" href="https://" /> -->
 
     <!-- Open Graph (Facebook, LinkedIn та ін.) -->
     <meta property="og:title" content="Кредитне Бюро Західного Регіону | Пропозиції">
-    <meta property="og:description" content="Пропозиції для кредитування | Кредитне Бюро Західного Регіону. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:description" content="Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
     <meta property="og:type" content="website" />
     <!-- <meta property="og:url" content="https://" /> -->
     <!-- <meta property="og:image" content="https://" /> -->
@@ -32,7 +32,7 @@
                     "@id": "https://example.com/propositions",
                     "url": "https://example.com/propositions",
                     "name": "Кредитні пропозиції",
-                    "description": "Пропозиції для кредитування | Кредитне Бюро Західного Регіону. Іпотечні кредити на нерухомість. Просто, швидко, чесно."
+                    "description": "Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно."
                 },
                 {
                     "@type": "Organization",
@@ -41,15 +41,24 @@
                     "url": "https://example.com/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://example.com/logo.png"
+                        "url": ""
                     },
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+380 00 000 00 00",
-                        "contactType": "customer service",
-                        "areaServed": "UA",
-                        "availableLanguage": "Ukrainian"
-                    }
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380982752678",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        },
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+380668604679",
+                            "contactType": "customer service",
+                            "areaServed": "UA",
+                            "availableLanguage": "Ukrainian"
+                        }
+                    ]
                 },
                 {
                     "@type": "Service",
@@ -134,13 +143,13 @@
       <section class="offer" aria-labelledby="offer">
           <div class="offer__body">
               <div class="offer__body-inner container mobile-container">
-                  <div class="offer__h2-title">
+                  <div class="offer__h2-title animate-left">
                     <h1 class="offer__title" id="offers-title">
                         Пропозиції
                       </h1>
                       <img width="36px" height="36px" class="offer__img" src="assets/images/Envelope.svg" alt="пропозиції кредиту">
                 </div>
-                  <div class="offer__content">
+                  <div class="offer__content animate-fade">
                       <div class="offer-text_content">
                           <h2>“Моя квартира за 5 років”</h2>
                           <div class="offer__list">
@@ -170,7 +179,7 @@
 
                           <div class="calculator__field">
                               <label class="calculator__label js-slider-month-label">Термін, місяців</label>
-                              <input class="calculator__input js-slider-month-input" type="range" min="12" max="60" step="12" value="12">
+                              <input class="calculator__input js-slider-month-input" type="range" min="12" max="72" step="12" value="12">
                               <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
                           </div>
 
@@ -200,7 +209,7 @@
                       </div>
                   </div>
 
-                  <div class="offer__content">
+                  <div class="offer__content animate-fade">
                       <div class="offer-text_content">
                           <h2>“Комфортна іпотека на 7 років”</h2>
                           <div class="offer__list">
@@ -227,7 +236,7 @@
 
                           <div class="calculator__field">
                               <label class="calculator__label js-slider-month-label">Термін, місяців</label>
-                              <input class="calculator__input js-slider-month-input" type="range" min="12" max="60" step="12" value="12">
+                              <input class="calculator__input js-slider-month-input" type="range" min="12" max="72" step="12" value="12">
                               <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
                           </div>
 
@@ -292,10 +301,10 @@
       <section class="why" aria-labelledby="why-title">
         <div class="why__body">
           <div class="why__body-inner container mobile-container">
-                <div class="why__text">
+                <div class="why__text animate-fade">
                   <h2 class="why__title" id="why-title">Чому вибирають нас?</h2>
                 </div> 
-                <div class="why__list">
+                <div class="why__list animate-fade">
                   <ul>
                       <li><img width="30" height="30" src="assets/images/green foh.svg" alt=""><p>Легкість у фінансах! Низькі відсотки означають менше фінансового навантаження!</p></li>
                       <li><img width="30" height="30" src="assets/images/green foh.svg" alt=""><p>Дешеві кредити — це величезна можливість для молодих сімей!</p></li>
@@ -307,7 +316,7 @@
         </div>
       </section>
 
-      <section class="calculator " aria-labelledby="calculator ">
+      <section class="calculator animate-fade" aria-labelledby="calculator ">
           <div class="calculator__body calculator__body--offer">
               <div class="calculator__body-inner container mobile-container" >
                   <div class="calculator__card calculator__card--main">
@@ -320,7 +329,7 @@
 
                       <div class="calculator__field">
                           <label class="calculator__label js-slider-month-label">Термін, місяців</label>
-                          <input class="calculator__input js-slider-month-input" type="range" min="12" max="60" step="12" value="12">
+                          <input class="calculator__input js-slider-month-input" type="range" min="12" max="72" step="12" value="12">
                           <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
                       </div>
 
@@ -390,6 +399,7 @@
       </div>
   </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="scripts/main.js" type="module"></script>
 </body>
 </html>
