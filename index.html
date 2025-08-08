@@ -23,66 +23,75 @@
     <!-- Icons, CSS & Fonts -->
     <link rel="stylesheet" href="styles/main.css">
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://example.com/#website",
-          "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
-          "url": "https://example.com/",
-          "description": "Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.",
-          "publisher": {
-            "@id": "https://example.com/#organization"
-          }
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://example.com/#organization",
-          "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
-          "url": "https://example.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://example.com/logo.png"
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://example.com/#website",
+            "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
+            "url": "https://example.com/",
+            "description": "Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.",
+            "publisher": {
+              "@id": "https://example.com/#organization"
+            }
           },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+380 00 000 00 00",
-            "contactType": "customer service",
-            "areaServed": "UA",
-            "availableLanguage": "Ukrainian"
-          }
-        },
-        {
-          "@type": "Service",
-          "serviceType": "Кредитування фізичних осіб",
-          "provider": {
-            "@id": "https://example.com/#organization"
+          {
+            "@type": "Organization",
+            "@id": "https://example.com/#organization",
+            "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
+            "url": "https://example.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": ""
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+380982752678",
+                "contactType": "customer service",
+                "areaServed": "UA",
+                "availableLanguage": "Ukrainian"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+380668604679",
+                "contactType": "customer service",
+                "areaServed": "UA",
+                "availableLanguage": "Ukrainian"
+              }
+            ]
           },
-          "areaServed": {
-            "@type": "Country",
-            "name": "Ukraine"
+          {
+            "@type": "Service",
+            "serviceType": "Надання послуг з кредитування",
+            "provider": {
+              "@id": "https://example.com/#organization"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Ukraine"
+            },
+            "availableChannel": {
+              "@type": "ServiceChannel",
+              "serviceUrl": "https://example.com/#credits"
+            }
           },
-          "availableChannel": {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://example.com/#credits"
+          {
+            "@type": "SoftwareApplication",
+            "name": "Кредитний калькулятор",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "browserRequirements": "Requires JavaScript",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "UAH"
+            }
           }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Кредитний калькулятор",
-          "applicationCategory": "FinanceApplication",
-          "operatingSystem": "Web",
-          "browserRequirements": "Requires JavaScript",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "UAH"
-          }
-        }
-      ]
-    }
+        ]
+      }
   </script>
 </head>
 <body>
@@ -119,7 +128,7 @@
   <main>
     <section class="opening " aria-labelledby="opening">
       <div class="opening__body">
-        <div class="opening__body-inner container mobile-container" >
+        <div class="opening__body-inner container mobile-container animate-left" >
               <div class="opening__text">
                 <h1 class="opening__title" id="opening-title">Дешева іпотека — шлях до власного житла та затишку.</h1>
                 <h2 class="opening__subtitle">Іпотечні кредити на нерухомість. <br> Просто, швидко, чесно.</h2>
@@ -161,7 +170,7 @@
       </div>
     </div>
 
-    <section class="calculator " aria-labelledby="calculator ">
+    <section class="calculator animate-fade" aria-labelledby="calculator ">
       <div class="calculator__body">
         <div class="calculator__body-inner container mobile-container" >
           <div class="calculator__card calculator__card--main">
@@ -174,7 +183,7 @@
 
             <div class="calculator__field">
               <label class="calculator__label js-slider-month-label">Термін, місяців</label>
-              <input class="calculator__input js-slider-month-input" type="range" min="12" max="60" step="12" value="12">
+              <input class="calculator__input js-slider-month-input" type="range" min="12" max="72" step="12" value="12">
               <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
             </div>
 
@@ -209,13 +218,13 @@
     <section class="adventages" aria-labelledby="adventages">
       <div class="adventages__body">
         <div class="adventages__body-inner container mobile-container">
-          <div class="adventages__h2-title">
+          <div class="adventages__h2-title animate-left">
             <h2 class="adventages__title" id="adventages-title">
               Наші переваги  
             </h2>       
               <img width="36px" height="36px" class="adventages__img" src="assets/images/Gem Stone.svg" alt="">
           </div>
-          <div class="advantages__content">
+          <div class="advantages__content animate-fade">
             <ul class="features-list">
               <li>
                 <div class="feature-title">
@@ -263,13 +272,13 @@
     <section class="offers" aria-labelledby="offers"> 
         <div class="offers__body">
             <div class="offers__body-inner container mobile-container">
-                <div class="offers__h2-title">
+                <div class="offers__h2-title animate-left">
                     <h2 class="offers__title" id="offers-title">
                         Пропозиції
                       </h2>
                       <img width="36px" height="36px" class="offers__img" src="assets/images/Envelope.svg" alt="пропозиції кредиту">
                 </div>
-                <div class="offers__content">
+                <div class="offers__content animate-fade">
                     <div class="offers__box">
                         <div class="offers__box-text">
                             <img width="36px" height="36px" src="assets/images/Office Building.svg" alt="Моя квартира за 5 років">
@@ -302,19 +311,17 @@
     <section class="recommendations" aria-labelledby="recommendations">
       <div class="recommendations__body">
         <div class="recommendations__body-inner container mobile-container">
-          <div class="recommendations__h2-title">
+          <div class="recommendations__h2-title animate-left">
               <h2 class="recommendations__title" id="recommendations-title">
                   Рекомендації
-                  <!-- для рекомендацій дай alt, як і в попередніх титулках -->
                 </h2>
                 <img width="36px" height="36px" class="recommendations__img" src="assets/images/Star.svg" alt="Рекомендації нашої команди">
           </div>
-          <div class="recommendations__slider">
+          <div class="recommendations__slider animate-fade">
             <div class="slider__content">
               <button title="Попередній слайд" class="slider-control--button prev-button" aria-label="Попередній слайд">❮</button>
               <div class="image-display">
                 <div class="slide active">
-                  <!-- alt по тематиці слайда -->
                   <img width="1333px" height="650px" loading="lazy" src="assets/images/slider111.png" alt="Ціна жатла по ціні оренди" />
                   <div class="slide__text-content">
                     <h3
@@ -333,7 +340,6 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- alt по тематиці слайда -->
                   <img width="1333px" height="650px" loading="lazy" src="assets/images/slider22.png" alt="Платиш за оренду - Плати за своє" />
                   <div class="slide__text-content">
                     <h2>
@@ -361,7 +367,6 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- alt по тематиці слайда -->
                   <img width="1333px" height="650px" loading="lazy" src="assets/images/slider3.png" alt="Твоя квартира за ціною оренди" />
                   <div class="slide__text-content">
                     <h3>
@@ -381,7 +386,6 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- alt по тематиці слайда -->
                   <img width="1333px" height="650px" loading="lazy" src="assets/images/slider4.png" alt="Своє житло за $1 000 / міс. без банку та іпотеки" />
                   <div class="slide__text-content">
                     <h3>
@@ -393,7 +397,6 @@
                   </div>
                 </div>
                 <div class="slide active">
-                  <!-- alt по тематиці слайда -->
                   <img width="1333px" height="650px" loading="lazy" src="assets/images/slider5.png" alt="Фінансова свобода: не плати орендодавцю" />
                   <div class="slide__text-content">
                     <h3>Фінансова свобода: не плати орендодавцю!</h3>
@@ -466,6 +469,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="scripts/main.js" type="module"></script>
 </body>
 </html>
