@@ -1,3 +1,5 @@
+@use '../media' as *;
+
 @mixin abs-center {
   position:relative;
   top: 100%;
@@ -6,21 +8,44 @@
 }
 
 .calculator{
-    margin-top: 100px;
-    margin-inline: auto;
+    &__body {
+      margin-top: 100px;
+
+      &--offer {
+        margin-top: 0;
+        margin-bottom: 230px;
+      }
+    }
 
     &__card {
-      background-color: #fff; 
-      border-radius: 12px; 
-      padding: 2rem; 
-      width: 360px; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+      &--main {
+        margin-inline: auto;
+      }
+
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 360px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       color: #4a3f66;
+
+      @include tablet {
+        max-width: 260px;
+      }
+
+      @include mobile {
+        max-width: 220px;
+      }
     }
 
     &__title {
-      text-align: center; 
+      text-align: center;
       margin-bottom: 1.5rem;
+
+      @include tablet {
+        font-size: 20px;
+      }
     }
 
     &__field {
@@ -28,8 +53,8 @@
     }
 
     &__label {
-      display: block; 
-      font-size: 0.9rem; 
+      display: block;
+      font-size: 14px;
       margin-bottom: 0.5rem;
     }
 
@@ -40,18 +65,18 @@
       }
 
       &[type=number] {
-        padding: 0.5rem; 
-        font-size: 1.1rem; 
-        border: 1px solid #ddd; 
-        border-radius: 6px; 
+        padding: 0.5rem;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
         text-align: right;
       }
     }
 
     &__slider-value {
-      text-align: right; 
-      font-size: 0.9rem; 
-      color: #555; 
+      text-align: right;
+      font-size: 14px;
+      color: #555;
       margin-top: 0.25rem;
     }
 
@@ -59,19 +84,19 @@
       margin-top: 1.5rem;
 
       div {
-        display: flex; 
-        justify-content: space-between; 
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 0.75rem;
       }
 
       &-label {
-        font-size: 0.9rem; 
+        font-size: 14px;
         color: #777;
       }
 
       &-value {
-        font-size: 1.3rem; 
-        font-weight: bold; 
+        font-size: 16px;
+        font-weight: bold;
         color: #333;
       }
     }

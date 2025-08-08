@@ -3,11 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Кредитне Бюро Західного Регіону | Послуги кредитування</title>
+
+    <!-- Google Verification -->
+    <!-- <meta name="google-site-verification" content="" /> -->
+
+    <!-- SEO -->
+    <meta name="description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
+    <!-- <meta name="robots" content="index, follow, max-snippet:150" /> -->
+    <!-- <link rel="canonical" href="https://" /> -->
+
+    <!-- Open Graph (Facebook, LinkedIn та ін.) -->
+    <meta property="og:title" content="Кредитне Бюро Західного Регіону | Послуги кредитування">
+    <meta property="og:description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://" /> -->
+    <!-- <meta property="og:image" content="https://" /> -->
+
+    <!-- Icons, CSS & Fonts -->
     <link rel="stylesheet" href="styles/main.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://example.com/#website",
+          "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
+          "url": "https://example.com/",
+          "description": "Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.",
+          "publisher": {
+            "@id": "https://example.com/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://example.com/#organization",
+          "name": "Кредитне Бюро Західного Регіону | Послуги кредитування",
+          "url": "https://example.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://example.com/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+380 00 000 00 00",
+            "contactType": "customer service",
+            "areaServed": "UA",
+            "availableLanguage": "Ukrainian"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Кредитування фізичних осіб",
+          "provider": {
+            "@id": "https://example.com/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Ukraine"
+          },
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://example.com/#credits"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Кредитний калькулятор",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web",
+          "browserRequirements": "Requires JavaScript",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
-  <!-- проблеми з хрестиком на burger menu -->
   <header class="header">
     <div class="header__body">
       <div class="header__body-inner container mobile-container">
@@ -17,7 +95,7 @@
 
         <nav class="header__nav">
           <ul class="header__menu">
-            <li><a href="offers.html">Послуги</a></li>
+            <li><a href="offers.html">Пропозиції</a></li>
             <li><a href="about_us.html">Про нас</a></li>
             <li><a href="contact.html">Контакти</a></li>
           </ul>
@@ -86,44 +164,44 @@
     <section class="calculator " aria-labelledby="calculator ">
       <div class="calculator__body">
         <div class="calculator__body-inner container mobile-container" >
-            <div class="calculator__card">
-              <h2 class="calculator__title">Розрахувати кредит</h2>
+          <div class="calculator__card calculator__card--main">
+            <h2 class="calculator__title">Розрахувати кредит</h2>
 
-              <div class="calculator__calculator__field">
-                <label class="calculator__label" for="sum-input">Сума кредиту, $</label>
-                <input class="calculator__input" type="number" id="sum-input" value="10000" min="1000" step="1000">
+            <div class="calculator__field">
+              <label class="calculator__label">Сума кредиту, $</label>
+              <input class="calculator__input js-sum-input" type="number" value="10000" min="1000" step="1000">
+            </div>
+
+            <div class="calculator__field">
+              <label class="calculator__label js-slider-month-label">Термін, місяців</label>
+              <input class="calculator__input js-slider-month-input" type="range" min="12" max="60" step="12" value="12">
+              <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
+            </div>
+
+            <div class="calculator__field">
+              <label class="calculator__label">Ставка % на місяць</label>
+              <input class="calculator__input js-rate-input" type="number" value="1" min="0" max="100">
+            </div>
+
+            <div class="calculator__results">
+              <div>
+                <span class="calculator__results-label">Сума кредиту:</span>
+                <span class="value js-sum-credit">0 $</span>
               </div>
-
-              <div class="calculator__field">
-                <label class="calculator__label" for="slider-month-input">Термін, місяців</label>
-                <input class="calculator__input" type="range" id="slider-month-input" min="12" max="60" step="12" value="12">
-                <div class="calculator__slider-value" id="slider-month-label">12 міс.</div>
+              <div>
+                <span class="calculator__results-label">Відсотки:</span>
+                <span class="calculator__results-value js-percent-credit">0 $</span>
               </div>
-
-              <div class="calculator__field">
-                <label class="calculator__label" for="rate-input">Ставка % на місяць</label>
-                <input class="calculator__input" type="number" id="rate-input" value="1" min="0" max="100">
+              <div>
+                <span class="calculator__results-label">Загальна сума:</span>
+                <span class="calculator__results-value js-sum-amount">0 $</span>
               </div>
-
-              <div class="calculator__results">
-                <div>
-                  <span class="calculator__results-label">Сума кредиту:</span>
-                  <span class="value" id="sum-credit">0 $</span>
-                </div>
-                <div>
-                  <span class="calculator__results-label">Відсотки:</span>
-                  <span class="calculator__results-value" id="percent-credit">0 $</span>
-                </div>
-                <div>
-                  <span class="calculator__results-label">Загальна сума:</span>
-                  <span class="calculator__results-value" id="sum-amount">0 $</span>
-                </div>
-                <div>
-                  <span class="calculator__results-label">Щомісячно:</span>
-                  <span class="calculator__results-value" id="monthly-payment">0 $</span>
-                </div>
+              <div>
+                <span class="calculator__results-label">Щомісячно:</span>
+                <span class="calculator__results-value js-monthly-payment">0 $</span>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </section>

@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Кредитне Бюро Західного Регіону | Про нас</title>
+
+    <!-- Google Verification -->
+    <!-- <meta name="google-site-verification" content="" /> -->
+
+    <!-- SEO -->
+    <meta name="description" content="Кредитне Бюро Західного Регіону | Про нашу компанію. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
+    <!-- <meta name="robots" content="index, follow, max-snippet:150" /> -->
+    <!-- <link rel="canonical" href="https://" /> -->
+
+    <!-- Open Graph (Facebook, LinkedIn та ін.) -->
+    <meta property="og:title" content="Кредитне Бюро Західного Регіону | Про нас">
+    <meta property="og:description" content="Про нашу компанію | Кредитне Бюро Західного Регіону. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://" /> -->
+    <!-- <meta property="og:image" content="https://" /> -->
+
+    <!-- Icons, CSS & Fonts -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "AboutPage",
+                    "@id": "https://example.com/about",
+                    "url": "https://example.com/about",
+                    "name": "Про нас",
+                    "description": "Про нашу компанію | Кредитне Бюро Західного Регіону. Іпотечні кредити на нерухомість. Просто, швидко, чесно."
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://example.com/#organization",
+                    "name": "Кредитне Бюро Західного Регіону",
+                    "url": "https://example.com/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://example.com/logo.png"
+                    },
+                    "description": "Ми — не просто фінансова установа. Ми — партнери у найвідповідальніші моменти життя. Наша компанія створена, щоб ламати стереотипи про кредити та створювати новий стандарт сервісу — теплий, людяний, справжній.",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+380123456789",
+                        "contactType": "sales",
+                        "areaServed": "UA",
+                        "availableLanguage": "Ukrainian"
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -16,7 +66,7 @@
 
         <nav class="header__nav">
           <ul class="header__menu">
-            <li><a href="offers.html">Послуги</a></li>
+            <li><a href="offers.html">Пропозиції</a></li>
             <li><a href="about_us.html">Про нас</a></li>
             <li><a href="contact.html">Контакти</a></li>
           </ul>
@@ -37,12 +87,12 @@
     </div>
   </header>
   <main>
-
     <section class="openingab " aria-labelledby="opening about us">
       <div class="openingab__body">
         <div class="openingab__body-inner container mobile-container" >
             <div class="openingab__text-contant">
                 <div class="openingab__text">
+                    <!-- id h1 не збігається з aria-labelledby секції -->
                     <h1 class="openingab__title" id="opening-titleabout-the-company"> Про компанію</h1>
                     <p class="openingab__subtitle">Ми — не просто фінансова установа. Ми — партнери<br> у найвідповідальніші моменти життя. Наша компанія <br> створена, щоб ламати стереотипи про кредити та <br>створювати новий стандарт сервісу — теплий ,<br> людяний, справжній.</p>
                 </div>
@@ -53,7 +103,7 @@
                 <div class="openingab__text">
                     <h2 class="openingab__title" id="opening-title-our-mission"> Наша місія</h2>
                     <p class="openingab__subtitle">Покращувати життя людей завдяки якісним<br> фінансовим рішенням. Ми створені, щоб допомагати<br> — просто, швидко, чесно.</p>
-                </div> 
+                </div>
             </div>
               <div class="openingab__image">
                 <img width="475px" height="475px" loading="eager" src="assets/images/money.svg"  alt="Кредит для нерухомості в Івано-Франківську">
@@ -62,51 +112,51 @@
       </div>
     </section>
 
-
     <section class="adventagesab" aria-labelledby="adventages">
       <div class="adventagesab__body">
         <div class="adventagesab__body-inner container mobile-container">
           <div class="adventagesab__h2-title">
             <h2 class="adventagesab__title" id="adventages-title">
-              Чому вибирають нас?  
-            </h2>       
+              Чому вибирають нас?
+            </h2>
+            <!-- додай alt для іконки, як у решти -->
             <img width="36px" height="36px" class="adventages__img" src="assets/images/Thinking Face.svg" alt="">
         </div>
           <div class="adventagesab__content">
             <ul class="adventagesab-list">
-              <li>  
+              <li>
                 <h3>Унікальність</h3>
                 <p>Кожен клієнт — унікальний. <br> Пропонуємо індивідуальні кредитні <br>рішення, зручні саме для вас.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Надійність</h3>
                 <p>Чесність і прозорість у кожній угоді.<br> Нам довіряють.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Швидкість</h3>
                 <p>Рішення за лічені хвилини. Рекорд —<br> ключі від житла за 3 години!</p>
               </li>
-              <li>  
+              <li>
                 <h3>Сучасність</h3>
                 <p>Оформлення кредитів онлайн і без<br> паперів. Просто, зручно, швидко.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Простота</h3>
                 <p>Жодної "дрібноти". Все чітко і<br> зрозуміло.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Постійний зв’язок</h3>
                 <p>Служба підтримки 24/7 — ми завжди<br> поруч.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Чесність</h3>
                 <p>Без прихованих комісій. Лише те, що<br> обіцяно.</p>
               </li>
-              <li>  
+              <li>
                 <h3>Клієнт - головний</h3>
                 <p>Ми працюємо для вас. Комфорт і <br>результат — у пріоритеті.</p>
               </li>
-              <li>  
+              <li>
                 <h3>підтримка</h3>
                 <p>Ми не просто видаємо кредит — ми<br> супроводжуємо вас на кожному етапі.</p>
               </li>
