@@ -78,6 +78,9 @@
         row-gap: 10px;
 
         li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
           color: #ffffff;
           font-size: 20px;
           font-weight: 400;
