@@ -111,6 +111,10 @@ body {
 
 @media (max-width: 768px) {
   .header {
+  .dropdown-menu{
+    display: none;
+  }
+
     &__menu {
       position: absolute;
       top: 100%;
@@ -130,6 +134,7 @@ body {
 
     &__nav.active .header__menu {
       transform: translateY(0);
+      z-index: 1;
       opacity: 1;
       pointer-events: all;
     }
@@ -186,3 +191,4 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
