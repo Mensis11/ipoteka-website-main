@@ -21,9 +21,9 @@
           <li class="dropdown">
             <a href="#">Послуги &#9660 </a>
             <ul class="dropdown-menu">
+              <li><a href="ipoteka.html">іпотечний кредит</a></li>
               <li><a href="military.html">Кредит для військових</a></li>
-              <li><a href="house.html">Кредит під заставу будинка</a></li>
-              <li><a href="apartment.html">Кредит під заставу квартири</a></li>
+              <li><a href="house.html">Кредит під заставу нерухомості</a></li>
               <li><a href="auto.html">Кредит під заставу авто</a></li>
             </ul>
           </li>
@@ -59,7 +59,7 @@
               <div class="offer__body-inner container mobile-container">
                   <div class="offer__h2-title animate-left">
                     <h1 class="offer__title" id="offers-title">
-                        Кредит під заставу будинку
+                        Кредит під заставу нерухомості
                       </h1>
                       <img width="32px" height="32px" class="offer__img" src="assets/images/House.svg" alt="пропозиції кредиту">
                 </div>
@@ -117,11 +117,65 @@
                           </div>
                       </div>
                   </div>
+                  <div class="offer__content animate-fade">
+                      <div class="offer-text_content">
+                          <h2>Кредит під заставу квартири</h2>
+                          <div class="offer__list">
+                              <ul>
+                                    <li><img width="30" height="30" src="assets/images/white power.svg" alt=""><p>Ставка за кредитом від 1,5% на місяць</p></li>
+                                    <li><img width="30" height="30" src="assets/images/white power.svg" alt=""><p>Сума кредиту від 50 000 до 200 000 000 грн</p></li>
+                                    <li><img width="30" height="30" src="assets/images/white power.svg" alt=""><p>Рішення протягом 1 години</p></li>
+                                    <li><img width="30" height="30" src="assets/images/white power.svg" alt=""><p>Термін кредитування від 1 місяця до 10 років</p></li>
+                                    <li><img width="30" height="30" src="assets/images/white power.svg" alt=""><p>Видаємо до 90% від ринкової вартості квартири</p></li>
+                                </ul>
+                          </div>
+                          <button class="opening__button" type="button">Замовити дзвінок</button>
+                        </div>
+                        <div class="calculator__card">
+                          <h2 class="calculator__title">Розрахувати кредит</h2>
+
+                          <div class="calculator__field">
+                              <label class="calculator__label">Сума кредиту, $</label>
+                              <input class="calculator__input js-sum-input" type="number" value="10000" min="1000" step="1000">
+                          </div>
+
+                          <div class="calculator__field">
+                              <label class="calculator__label js-slider-month-label">Термін, місяців</label>
+                              <input class="calculator__input js-slider-month-input" type="range" min="12" max="84" step="12" value="12">
+                              <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
+                          </div>
+
+                          <div class="calculator__field">
+                              <label class="calculator__label">Ставка % на місяць</label>
+                              <input class="calculator__input js-rate-input" type="number" value="1" min="0" max="100">
+                          </div>
+
+                          <div class="calculator__results">
+                              <div>
+                                  <span class="calculator__results-label">Сума кредиту:</span>
+                                  <span class="value js-sum-credit">0 $</span>
+                              </div>
+                              <div>
+                                  <span class="calculator__results-label">Відсотки:</span>
+                                  <span class="calculator__results-value js-percent-credit">0 $</span>
+                              </div>
+                              <div>
+                                  <span class="calculator__results-label">Загальна сума:</span>
+                                  <span class="calculator__results-value js-sum-amount">0 $</span>
+                              </div>
+                              <div>
+                                  <span class="calculator__results-label">Щомісячно:</span>
+                                  <span class="calculator__results-value js-monthly-payment">0 $</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
 
                   
                       </div>
                   </div>
               </div>
+              
           </div>
       </section>
       <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-title">
