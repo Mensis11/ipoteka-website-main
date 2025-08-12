@@ -1,0 +1,36 @@
+.dogovor{
+    margin-top: 50px;
+    &__body{
+        &-inner{
+            border: #c4c2c2 1px solid;
+            border-radius: 10px;
+            h2{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            h3{
+                font-size: 28px;
+                font-weight: 500;
+            }
+            ul{
+                padding: 0;
+                list-style: none;
+                li{
+                    background-color:#3C487C ;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    p{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -20,22 +20,26 @@ export function InitOpenningForm() {
 
   emailjs.init("go-idoMc480xV0FTr");
 
-  document.getElementById("form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const params = {
-      name: document.getElementById("name").value,
-      phone: document.getElementById("phone").value,
-      email: document.getElementById("email").value
-    };
-
-    emailjs.send("service_rsacy8c", "template_mdyi18a", params)
-      .then(() => {
-        alert("Успішно надіслано!");
-        document.getElementById("form").reset();
-      })
-      .catch((err) => {
-        alert("Помилка: " + JSON.stringify(err));
-      });
-  });
+  const form= document.getElementById("form")
+  if(form){
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const params = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value
+      };
+  
+      emailjs.send("service_rsacy8c", "template_mdyi18a", params)
+        .then(() => {
+          alert("Успішно надіслано!");
+          form.reset();
+        })
+        .catch((err) => {
+          alert("Помилка: " + JSON.stringify(err));
+        });
+    });
+  }
+  else{console.log("no")}
 }

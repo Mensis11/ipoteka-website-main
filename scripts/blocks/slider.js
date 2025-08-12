@@ -37,3 +37,5 @@ export function initSlider() {
 
   showSlide(currentIndex);
 }
+
+
