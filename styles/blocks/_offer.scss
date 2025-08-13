@@ -32,11 +32,16 @@
   &__content {
     margin-top: 60px;
     display: flex;
+    padding: 30px;
+    background-color: #797EBA;
     border-radius: 15px;
     justify-content: space-between;
     gap: 50px;
     @media (max-width: 1126px) {
       flex-direction: column;
+    }
+    &--ner{
+      background-color: #ffffff;
     }
 
     .offer__box{

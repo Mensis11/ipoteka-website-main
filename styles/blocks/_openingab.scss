@@ -19,11 +19,17 @@
                     flex-direction: column-reverse;
                     gap: 20px;
                 }
+                &--ner{
+                    align-items: start;
+                }
 
             .openingab__text-contant {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+                &--ner{
+                    max-width: 700px;
+                }
 
                 @media (max-width: 768px) {
                     gap: 20px;
@@ -37,6 +43,14 @@
     }
 
     &__text {
+        &--ner{
+            @media (max-width: 768px) {
+                font-size: 28px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
         h1 {
             margin: 0;
             padding: 8px; 

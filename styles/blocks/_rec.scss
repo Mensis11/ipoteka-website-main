@@ -36,7 +36,7 @@ $text-color: #fff;
     overflow: hidden;
     border-radius: 12px;
     &--ner{
-      width: 900px;
+      max-width: 900px;
     }
     
     .slider__content {
