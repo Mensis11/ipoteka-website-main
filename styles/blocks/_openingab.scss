@@ -43,6 +43,9 @@
     }
 
     &__text {
+        .openingab__subtitle--nev{
+            max-width: 700px;
+        }
         &--ner{
             @media (max-width: 768px) {
                 font-size: 28px;

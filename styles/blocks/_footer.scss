@@ -23,6 +23,19 @@ $input-border: #ccc;
     align-items: flex-end;
     flex-wrap: wrap;
   }
+   &__menu {
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: start;
+
+    li a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
 
   &__map {
     flex: 1 1 420px;
@@ -88,12 +101,25 @@ $input-border: #ccc;
   }
 
   &__seo {
+    display: flex;
+    flex-direction: column;
     max-width: 730px;
     font-size: 18px;
     line-height: 1.6;
     color: $text-color;
     margin-top: 10px;
     text-align: right;
+    gap: 15px;
+    p{
+      margin: 0;
+    }
+    .footer__span{
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
   }
 
   @media (max-width: 1024px) {
@@ -208,11 +234,16 @@ $input-border: #ccc;
     }
 
     &__seo {
-      max-width: 100%;
-      font-size: 14px;
-      line-height: 1.4;
-      text-align: center;
-      margin-top: 15px;
+      p{
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: start;      
+      }
+      &__span{
+        font-size: 16px;
+      }
+
     }
   }
 }

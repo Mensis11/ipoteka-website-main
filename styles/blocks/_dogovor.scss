@@ -2,15 +2,23 @@
     margin-top: 50px;
     &__body{
         &-inner{
-            border: #c4c2c2 1px solid;
+            border: #e4dfdf 1px solid;
             border-radius: 10px;
             h2{
+                color: #333;
                 font-size: 32px;
                 font-weight: bold;
+                @media (max-width: 768px) {
+                    font-size: 26px;
+                }
             }
             h3{
+                color: #333;
                 font-size: 28px;
                 font-weight: 500;
+                @media (max-width: 768px) {
+                    font-size: 21px;
+                }
             }
             ul{
                 padding: 0;
