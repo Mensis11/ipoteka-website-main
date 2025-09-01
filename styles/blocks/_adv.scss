@@ -51,7 +51,10 @@
     }
   }
 
-  .advantages__content {
+  .advantages__content { 
+    background-color: #3c487c0a;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
    display: flex;
    width: 100%;
    justify-content: center;
@@ -74,6 +77,7 @@
       gap: 32px;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
+       scrollbar-color: #3C487C #e4e1d8;
 
 
       @media (max-width: 768px) {
