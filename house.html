@@ -4,7 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кредитне Бюро Західного Регіону | Кредитне Бюро Західного Регіону | Про нас</title>
+
+    <!-- Google Verification -->
+    <!-- <meta name="google-site-verification" content="" /> -->
+
+    <!-- SEO -->
+    <meta name="description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
+    <!-- <meta name="robots" content="index, follow, max-snippet:150" /> -->
+    <!-- <link rel="canonical" href="https://" /> -->
+
+    <!-- Open Graph (Facebook, LinkedIn та ін.) -->
+    <meta property="og:title" content="Кредитне Бюро Західного Регіону | Послуги кредитування">
+    <meta property="og:description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://" /> -->
+    <!-- <meta property="og:image" content="https://" /> -->
+
+    <!-- Icons, CSS & Fonts -->
+    <link rel="icon" href="assets/images/image_43-removebg-preview%202.svg">
     <link rel="stylesheet" href="styles/main.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FinancialProduct",
+            "name": "Кредити під заставу нерухомості",
+            "description": "Пропозиції кредитів під заставу будинку або квартири з вигідними умовами та швидким рішенням.",
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Кредит під заставу будинку",
+                    "description": "Ставка від 1,5% на місяць. Сума кредиту від 50 000 до 200 000 000 грн. Рішення протягом 1 години. Термін кредитування від 1 місяця до 10 років. Видаємо до 90% від ринкової вартості будинку. Без підтвердження доходів.",
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Кредит під заставу квартири",
+                    "description": "Ставка від 1,5% на місяць. Сума кредиту від 50 000 до 200 000 000 грн. Рішення протягом 1 години. Термін кредитування від 1 місяця до 10 років. Видаємо до 90% від ринкової вартості квартири.",
+                    "availability": "https://schema.org/InStock"
+                }
+            ],
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "Чому вибирають нас?",
+                    "value": "Легкість у фінансах! Низькі відсотки означають менше фінансового навантаження! Дешеві кредити — це величезна можливість для молодих сімей! Ми гнучкі! Кожен клієнт унікальний, тому пропонуємо індивідуальні рішення!"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Наші переваги",
+                    "value": [
+                        "Унікальність — кожен клієнт унікальний, індивідуальні кредитні рішення.",
+                        "Надійність — чесність і прозорість у кожній угоді. Нам довіряють.",
+                        "Швидкість — рішення за лічені хвилини. Рекорд — ключі від житла за 3 години!",
+                        "Сучасність — оформлення кредитів онлайн і без паперів.",
+                        "Простота — жодної 'дрібноти'. Все чітко і зрозуміло.",
+                        "Постійний зв’язок — служба підтримки 24/7.",
+                        "Чесність — без прихованих комісій.",
+                        "Клієнт — головний. Комфорт і результат — у пріоритеті.",
+                        "Підтримка — супровід на кожному етапі."
+                    ]
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Кредитний калькулятор",
+                    "value": "Онлайн інструмент для розрахунку щомісячних платежів, відсоткових ставок і загальної суми кредиту."
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
 
@@ -86,7 +154,7 @@
                             </div>
                             <button class="opening__button" type="button">Замовити дзвінок</button>
                         </div>
-                        <div class="calculator__card calculator__card--main">
+                        <div class="calculator__card js-calculator">
                             <h2 class="calculator__title">Розрахувати кредит</h2>
 
                             <div class="calculator__field">
@@ -139,7 +207,7 @@
                             </div>
                             <button class="opening__button" type="button">Замовити дзвінок</button>
                         </div>
-                        <div class="calculator__card">
+                        <div class="calculator__card js-calculator">
                             <h2 class="calculator__title">Розрахувати кредит</h2>
 
                             <div class="calculator__field">
@@ -148,20 +216,20 @@
                             </div>
 
                             <div class="calculator__field">
-                                <label class="calculator__label js-slider-month-label">Термін, місяців</label>
-                                <input class="calculator__input js-slider-month-input" type="range" min="12" max="84" step="12" value="12">
+                                <label class="calculator__label">Термін, місяців</label>
+                                <input class="calculator__input js-slider-month-input" type="range" min="6" max="240" step="6" value="12">
                                 <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
                             </div>
 
                             <div class="calculator__field">
                                 <label class="calculator__label">Ставка % на місяць</label>
-                                <input class="calculator__input js-rate-input" type="number" value="1" min="0" max="100">
+                                <input class="calculator__input js-rate-input" type="number" value="5" min="1" max="100">
                             </div>
 
                             <div class="calculator__results">
                                 <div>
                                     <span class="calculator__results-label">Сума кредиту:</span>
-                                    <span class="value js-sum-credit">0 $</span>
+                                    <span class="calculator__results-value js-sum-credit">0 $</span>
                                 </div>
                                 <div>
                                     <span class="calculator__results-label">Відсотки:</span>

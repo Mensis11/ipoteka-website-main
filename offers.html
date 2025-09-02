@@ -9,104 +9,56 @@
     <!-- <meta name="google-site-verification" content="" /> -->
 
     <!-- SEO -->
-    <meta name="description" content="Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
+    <meta name="description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно." />
     <!-- <meta name="robots" content="index, follow, max-snippet:150" /> -->
     <!-- <link rel="canonical" href="https://" /> -->
 
     <!-- Open Graph (Facebook, LinkedIn та ін.) -->
-    <meta property="og:title" content="Кредитне Бюро Західного Регіону | Пропозиції">
-    <meta property="og:description" content="Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
+    <meta property="og:title" content="Кредитне Бюро Західного Регіону | Послуги кредитування">
+    <meta property="og:description" content="Послуги з кредитування Івано-Франківськ. Іпотечні кредити на нерухомість. Просто, швидко, чесно.">
     <meta property="og:type" content="website" />
     <!-- <meta property="og:url" content="https://" /> -->
     <!-- <meta property="og:image" content="https://" /> -->
 
     <!-- Icons, CSS & Fonts -->
+    <link rel="icon" href="assets/images/image_43-removebg-preview%202.svg">
     <link rel="stylesheet" href="styles/main.css">
 
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@graph": [
+            "@type": "FinancialProduct",
+            "name": "Кредити на нерухомість",
+            "description": "Пропозиції кредитів на наші будинки та квартири з вигідними умовами та швидким рішенням.",
+            "offers": [
                 {
-                    "@type": "WebPage",
-                    "@id": "https://example.com/propositions",
-                    "url": "https://example.com/propositions",
-                    "name": "Кредитні пропозиції",
-                    "description": "Кредитне Бюро Західного Регіону | Пропозиції. Іпотечні кредити на нерухомість. Просто, швидко, чесно."
+                    "@type": "Offer",
+                    "name": "Наші будинки",
+                    "description": "Кредит під заставу наших будинків. Вигідні умови, швидке рішення.",
+                    "availability": "https://schema.org/InStock"
                 },
                 {
-                    "@type": "Organization",
-                    "@id": "https://example.com/#organization",
-                    "name": "Кредитне Бюро Західного Регіону",
-                    "url": "https://example.com/",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": ""
-                    },
-                    "contactPoint": [
-                        {
-                            "@type": "ContactPoint",
-                            "telephone": "+380982752678",
-                            "contactType": "customer service",
-                            "areaServed": "UA",
-                            "availableLanguage": "Ukrainian"
-                        },
-                        {
-                            "@type": "ContactPoint",
-                            "telephone": "+380668604679",
-                            "contactType": "customer service",
-                            "areaServed": "UA",
-                            "availableLanguage": "Ukrainian"
-                        }
-                    ]
+                    "@type": "Offer",
+                    "name": "Наші квартири",
+                    "description": "Кредит під заставу наших квартир. Вигідні умови, швидке рішення.",
+                    "availability": "https://schema.org/InStock"
+                }
+            ],
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "Чому вибирають нас?",
+                    "value": "Легкість у фінансах! Низькі відсотки означають менше фінансового навантаження! Дешеві кредити — це величезна можливість для молодих сімей! Ми гнучкі! Кожен клієнт унікальний, тому пропонуємо індивідуальні рішення!"
                 },
                 {
-                    "@type": "Service",
-                    "serviceType": "Моя квартира за 5 років",
-                    "provider": {
-                        "@id": "https://example.com/#organization"
-                    },
-                    "description": "Купуй повноцінну квартиру вже зараз — без очікувань чи будівництва. Фіксований платіж $1000 / міс. без зміни ставок. Без банків, бюрократії та складної іпотечної історії.",
-                    "areaServed": {
-                        "@type": "Country",
-                        "name": "Ukraine"
-                    },
-                    "availableChannel": {
-                        "@type": "ServiceChannel",
-                        "serviceUrl": "https://example.com/propositions#offer1"
-                    }
-                },
-                {
-                    "@type": "Service",
-                    "serviceType": "Комфортна іпотека на 7 років",
-                    "provider": {
-                        "@id": "https://example.com/#organization"
-                    },
-                    "description": "Ідеально підходить для тих, хто хоче низький аванс і стабільний графік платежів. Без прихованих платежів, страховок чи банківських комісій.",
-                    "areaServed": {
-                        "@type": "Country",
-                        "name": "Ukraine"
-                    },
-                    "availableChannel": {
-                        "@type": "ServiceChannel",
-                        "serviceUrl": "https://example.com/propositions#offer2"
-                    }
-                },
-                {
-                    "@type": "SoftwareApplication",
+                    "@type": "PropertyValue",
                     "name": "Кредитний калькулятор",
-                    "applicationCategory": "FinanceApplication",
-                    "operatingSystem": "Web",
-                    "browserRequirements": "Requires JavaScript",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0",
-                        "priceCurrency": "UAH"
-                    }
+                    "value": "Онлайн інструмент для розрахунку щомісячних платежів та умов кредиту."
                 }
             ]
         }
     </script>
+
 </head>
 <body>
     <header class="header">
